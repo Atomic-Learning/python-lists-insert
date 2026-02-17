@@ -1,0 +1,21 @@
+{
+    "title": "Python: Lists - The insert Method",
+    "slug": "python-lists-insert",
+    "description": "Inserting items at specific positions in a list using the insert method, which takes an index and a value as arguments.",
+    "authors": [
+        "chris-cooling"
+    ],
+    "tags": [
+        "python"
+    ],
+    "duration": 6,
+    "prerequisites": [
+        "python-lists-introduction",
+        "python-lists-slicing",
+        "python-methods",
+        "python-none"
+    ],
+    "related": [
+        "python-lists-append"
+    ]
+}
