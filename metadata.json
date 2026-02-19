@@ -8,10 +8,10 @@
     "tags": [
         "python"
     ],
-    "duration": 6,
+    "duration": 5,
     "prerequisites": [
         "python-lists-introduction",
-        "python-lists-slicing",
+        "python-indexing",
         "python-methods",
         "python-none"
     ],

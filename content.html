@@ -1,17 +1,7 @@
 
-<p>The <code class="language-python">insert</code> method belongs to the <code class="language-python">list</code> type in Python and is used to add an item at a specific position in a list. It takes two arguments: the index where you want to insert, and the item to insert.</p>
+<p>The <code class="language-python">insert</code> method belongs to the <code class="language-python">list</code> type in Python and is used to add an item at a specific position in a list. It takes two arguments: the index where you want to insert, and the item to insert. This modifies the original list in place.</p>
 
-<h2>Basic <code class="language-python">insert</code> Usage</h2>
-
-<p>The syntax is: <code class="language-python">my_list.insert(index, item)</code></p>
-
-<py-cell>colors = ["red", "blue"]
-print(colors)
-
-colors.insert(1, "green")
-print(colors)</py-cell>
-
-<h2>Inserting at Different Positions</h2>
+<h2>Basic Usage</h2>
 
 <p>You can insert at any valid index:</p>
 
@@ -24,7 +14,18 @@ print(animals)
 animals.insert(2, "rabbit")
 print(animals)</py-cell>
 
-<h2>Inserting at the End</h2>
+Note that when inserting a new item, all items at or after the specified index have their indices increased by one to accommodate the new item.
+
+<h2>Using Negative Indices</h2>
+
+<p>You can use negative indices with <code class="language-python">insert()</code>:</p>
+
+<py-cell>my_list = [1, 2, 3, 4]
+my_list.insert(-1, 99)
+
+print(my_list)</py-cell>
+
+<h2>Out of Bounds Indices</h2>
 
 <p>If you use an index equal to or greater than the list's length, the item is appended to the end:</p>
 
@@ -35,25 +36,13 @@ print(my_list)</py-cell>
 
 <p>But for adding to the end, <code class="language-python">append</code> is clearer and preferred.</p>
 
-<h2><code class="language-python">insert</code> Modifies the Original List</h2>
-
-<p><code class="language-python">insert</code> modifies the original list:</p>
+Uses a negative index that is out of bounds will insert at the beginning of the list:
 
 <py-cell>my_list = [1, 2, 3]
-my_list.insert(1, "new")
-
-print(my_list)
-</py-cell>
+my_list.insert(-10, 0)
+print(my_list)</py-cell>
 
 <h2>Return Value</h2>
 
 The <code class="language-python">insert</code> method returns <code class="language-python">None</code>, so you typically don't capture its return value in a variable.
 
-<h2>Using Negative Indices</h2>
-
-<p>You can use negative indices with <code class="language-python">insert()</code>:</p>
-
-<py-cell>my_list = [1, 2, 3, 4]
-my_list.insert(-1, 99)
-
-print(my_list)</py-cell>
